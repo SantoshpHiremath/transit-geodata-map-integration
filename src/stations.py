@@ -1,8 +1,8 @@
 """
 Synthetic transit-network geodata: stop/station records and route
 segments for a fictional mid-size German city network, styled after
-VAG Nürnberg's own network shape (U-Bahn/Tram/Bus stops) but entirely
-invented -- no real VAG station names, coordinates, or timetable data
+a typical German city network shape (U-Bahn/Tram/Bus stops) but entirely
+invented -- no real station names, coordinates, or timetable data
 were used or accessed.
 
 This module is the "data layer" the rest of the project (distance/
@@ -34,9 +34,9 @@ class RouteSegment:
 
 # Fictional stops laid out around a fictional city center at
 # approximately (49.45, 11.08) -- roughly Nuremberg's real latitude/
-# longitude, chosen only because the posting is Nuremberg-based and a
-# plausible coordinate range makes the demo legible, NOT because any
-# of these stop names or exact coordinates are real VAG data.
+# longitude, chosen only because a plausible coordinate
+# range makes the demo legible, NOT because any
+# of these stop names or exact coordinates are real transit data.
 STOPS: list[Stop] = [
     Stop("S01", "Rathausplatz", 49.4521, 11.0767, "ubahn"),
     Stop("S02", "Nordbahnhof", 49.4610, 11.0822, "ubahn"),

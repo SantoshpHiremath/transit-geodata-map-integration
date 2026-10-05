@@ -7,11 +7,9 @@ IMPORTANT DISCLOSURE: this sandbox has no MapTiler API key configured
 and no confirmed outbound network access to maptiler.com, so this
 module builds and validates the REQUEST -- the URL, its parameters,
 and marker encoding -- but never calls the real MapTiler API and never
-renders an actual map image. This is the same "structure is real,
-network call is not" pattern used in this portfolio's
-lidar-vms-integration-harness (RTSP URL building without a real
-camera) and iot-timeseries-cloud-pipeline (cloud client interfaces
-without a real cloud account). A real integration would need an
+renders an actual map image. The structure is real and the network call is not,
+as in lidar-vms-integration-harness (RTSP URL building) and
+iot-timeseries-cloud-pipeline (cloud client interfaces). A real integration would need an
 actual MapTiler API key and would swap fetch_static_map_bytes()'s stub
 for a real HTTP GET -- the URL-building and validation logic here
 would not need to change.

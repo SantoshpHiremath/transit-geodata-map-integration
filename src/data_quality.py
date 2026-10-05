@@ -1,9 +1,8 @@
 """
 Data-quality checks over the transit geodata -- coordinate validation
 and referential-integrity checks between stops and route segments.
-This mirrors the "find and flag the bad row rather than silently drop
-or crash on it" pattern used elsewhere in this portfolio
-(social-kpi-impact-tracker's find_accommodation_overcounts, etc.).
+It follows a "find and flag the bad row rather than silently drop
+or crash on it" approach.
 """
 
 from __future__ import annotations
